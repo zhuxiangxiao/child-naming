@@ -3,11 +3,11 @@ package naming
 import (
 	"fmt"
 
-	"github.com/kuangxc/child-naming/pkg/alg/naming"
-	"github.com/kuangxc/child-naming/pkg/conf"
-	"github.com/kuangxc/child-naming/pkg/data"
-	"github.com/kuangxc/child-naming/pkg/output"
-	"github.com/kuangxc/child-naming/pkg/types"
+	"github.com/zhuxiangxiao/child-naming/pkg/alg/naming"
+	"github.com/zhuxiangxiao/child-naming/pkg/conf"
+	"github.com/zhuxiangxiao/child-naming/pkg/data"
+	"github.com/zhuxiangxiao/child-naming/pkg/output"
+	"github.com/zhuxiangxiao/child-naming/pkg/types"
 )
 
 func Run() {

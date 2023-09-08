@@ -3,8 +3,8 @@ package naming
 import (
 	"fmt"
 
-	"github.com/kuangxc/child-naming/pkg/types"
-	"github.com/kuangxc/child-naming/pkg/util"
+	"github.com/zhuxiangxiao/child-naming/pkg/types"
+	"github.com/zhuxiangxiao/child-naming/pkg/util"
 )
 
 func filterExclude(srcNameChn chan *types.NameInfo, excludeWords []string,
@@ -57,7 +57,7 @@ func filterInclude(srcNameChn chan *types.NameInfo, includeWords []string) chan 
 	return filterIncludeNameChn
 }
 
-//音调相关的问题
+// 音调相关的问题
 func filtedPinyinDisharmony(srcNameChn chan *types.NameInfo, ps []*types.Pinyin) chan *types.NameInfo {
 	resultNameChn := make(chan *types.NameInfo, 100)
 	go func() {

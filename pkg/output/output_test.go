@@ -3,7 +3,7 @@ package output
 import (
 	"testing"
 
-	"github.com/kuangxc/child-naming/pkg/types"
+	"github.com/zhuxiangxiao/child-naming/pkg/types"
 )
 
 func TestSaveExcel(t *testing.T) {

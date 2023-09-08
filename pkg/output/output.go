@@ -10,7 +10,7 @@ import (
 
 	"github.com/360EntSecGroup-Skylar/excelize"
 
-	"github.com/kuangxc/child-naming/pkg/types"
+	"github.com/zhuxiangxiao/child-naming/pkg/types"
 )
 
 const (
@@ -21,7 +21,7 @@ const (
 	fourthColumn = "D"
 )
 
-//SaveExcel save result to excel file
+// SaveExcel save result to excel file
 func SaveExcel(nameChn chan *types.NameInfo, limits int) {
 	log.Println("start save result to excel.")
 	f := excelize.NewFile()
@@ -54,7 +54,7 @@ func SaveExcel(nameChn chan *types.NameInfo, limits int) {
 	os.Exit(0)
 }
 
-//SaveText save  result to text file
+// SaveText save  result to text file
 func SaveText(names []*types.NameInfo, limits int) {
 	log.Println("start save result to text.")
 	f, err := os.Create(time.Now().Format("2006-01-02") + ".txt")
